@@ -57,6 +57,14 @@ function pauseOrResume() {
     paused = !paused;
 }
 
+function restart() {
+    shouldEnd = false;
+    paused = false;
+    snake = new Snake();
+    food = new Food();
+    loop();
+}
+
 function getStatus() {
     if (paused) return "Paused";
     if (shouldEnd) return "Game Over";
