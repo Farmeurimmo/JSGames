@@ -1,0 +1,118 @@
+body {
+  background: #1a1a34;
+  margin: 0;
+}
+
+h1 {
+  color: #d7d3d3;
+  text-align: center;
+  padding: 10px;
+}
+
+.data {
+  color: #d7d3d3;
+  padding: 2px;
+}
+
+#game {
+  padding: 12px;
+  /* Center the game */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100vh;
+  max-height: 100vh;
+  z-index: 1;
+}
+
+#right {
+  padding: 10px;
+  float: right;
+  text-align: left;
+  width: 50vh;
+}
+
+#left {
+  padding: 10px;
+  float: left;
+  width: 50vh;
+}
+
+.content p {
+  color: #d7d3d3;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.topnav {
+  position: relative;
+  padding: 10px 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  background-color: #232341;
+}
+
+.topnav a {
+  margin: 20px 50px;
+  width: auto;
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.active {
+  text-shadow: 0 0 10px white;
+}
+
+.content {
+  color: white;
+}
+
+p {
+  font-size: 22px;
+  font-weight: lighter;
+  color: #f2f2f2;
+}
+
+.content a {
+  color: #fa9b1c;
+  text-decoration: none;
+}
+
+footer .content {
+  display: inline-flex;
+  margin-top: 90px;
+  padding: 8px 30px;
+  width: 100%;
+  max-width: 100vh;
+}
+
+footer a, .topnav a {
+  width: auto;
+  position: relative;
+  border-radius: 50px;
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:after, .topnav a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #6dff00;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+footer a:hover:after, .topnav a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
