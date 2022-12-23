@@ -1,5 +1,5 @@
-zoom = 5;
-let frame = 10;
+zoom = 9;
+let frame = 8;
 let food;
 shouldEnd = false;
 paused = false;
