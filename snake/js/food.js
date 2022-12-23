@@ -5,10 +5,10 @@ class Food {
     this.body = createVector(this.x, this.y);
   }
 
-    show() {
-        noStroke();
-        fill(255, 0, 0);
-        rect(this.body.x, this.body.y, 1, 1);
-    }
+  show() {
+    noStroke();
+    fill(255, 0, 0);
+    rect(this.body.x, this.body.y, 1, 1);
+  }
 
 }

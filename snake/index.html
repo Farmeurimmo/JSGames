@@ -4,24 +4,24 @@
 <head>
   <meta charset="utf-8">
   <title>JSGames - Snake</title>
-  <meta name="description" content="js games Farmeurimmo Snake game in js opensource github p5js snake">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="js games Farmeurimmo Snake game in js opensource github p5js snake" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta content="" property="og:title">
+  <meta content="" property="og:type">
+  <meta content="" property="og:url">
+  <meta content="" property="og:image">
 
-  <link rel="manifest" href="../site.webmanifest">
+  <link href="../site.webmanifest" rel="manifest">
 
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link href="../css/normalize.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
 
-  <meta name="theme-color" content="#fafafa">
+  <meta content="#fafafa" name="theme-color">
 </head>
 
 <header>
@@ -48,20 +48,31 @@
       <script src="js/food.js"></script>
     </div>
     <div id="right">
-      <div class="data">
-      <h2>Controls</h2>
-      <ul>
-        <li>Z : up</li>
-        <li>Q : left</li>
-        <li>S : down</li>
-        <li>D : right</li>
-      </ul>
+      <div class="data"><h2>Data</h2>
+        <ul>
+          <div class="data" id="score"></div>
+          <div class="data" id="status"></div>
+          <div class="data" id="fps"></div>
+          <div class="data" id="zoom"></div>
+          <div class="data" id="elapsed"></div>
+          <button id="resumeOrPause" onclick="pauseOrResume()">Pause</button>
+          <button id="restart" onclick="restart()">Restart</button>
+          <br><br>
+          <button id="up-m" onclick="up()">Up</button>
+          <button id="down-m" onclick="down()">Down</button>
+          <button id="left-m" onclick="left()">Left</button>
+          <button id="right-m" onclick="right()">Right</button>
+        </ul>
       </div>
-      <div class="data" id="score"></div>
-      <div class="data" id="status"></div>
-      <div class="data" id="frame"></div>
-      <button id="resumeOrPause" onclick="pauseOrResume()">Pause</button>
-      <button id="restart" onclick="restart()">Restart</button>
+      <div class="data">
+        <h2>Controls</h2>
+        <ul>
+          <li>Z : up</li>
+          <li>Q : left</li>
+          <li>S : down</li>
+          <li>D : right</li>
+        </ul>
+      </div>
     </div>
   </div>
 </main>
