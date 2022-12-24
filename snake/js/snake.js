@@ -44,7 +44,7 @@ class Snake {
   endGame() {
     let x = this.body[this.body.length - 1].x;
     let y = this.body[this.body.length - 1].y;
-    if (x > width / zoom || x < 0 || y >
+    if (x >= width / zoom || x < 0 || y >=
       height / zoom || y < 0) return true;
   }
 

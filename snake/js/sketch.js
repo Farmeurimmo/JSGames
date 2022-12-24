@@ -1,4 +1,4 @@
-zoom = 9;
+zoom = 10;
 let frame = 8;
 let food;
 shouldEnd = false;
@@ -41,7 +41,7 @@ function end() {
   for (let i = 0; i < snake.len; i++) {
     snake.body.pop();
   }
-  textSize(8);
+  textSize(5);
   background(0, 255, 0);
   text("Game Over", 5, 15);
   updateBar();
