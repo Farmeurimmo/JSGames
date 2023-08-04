@@ -1,5 +1,3 @@
 # JSGames
 
---> https://games.farmeurimmo.fr
-
-Jeux en js comme snake et bientôt plus !
+Projet arrêté par manque d'intérêt envers celui ci.
